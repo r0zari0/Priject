@@ -14,6 +14,10 @@
 		C320381829156B89001C4CB3 /* Priject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C320381629156B89001C4CB3 /* Priject.xcdatamodeld */; };
 		C320381A29156B8B001C4CB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C320381929156B8B001C4CB3 /* Assets.xcassets */; };
 		C320381D29156B8B001C4CB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C320381B29156B8B001C4CB3 /* LaunchScreen.storyboard */; };
+		C320382C2915B523001C4CB3 /* MyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C320382B2915B523001C4CB3 /* MyView.xib */; };
+		C320382E2915B6BB001C4CB3 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C320382D2915B6BB001C4CB3 /* MyView.swift */; };
+		C320383129172711001C4CB3 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C320383029172711001C4CB3 /* SecondVC.swift */; };
+		C32038342918B701001C4CB3 /* LastVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32038332918B701001C4CB3 /* LastVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		C320381929156B8B001C4CB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C320381C29156B8B001C4CB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C320381E29156B8B001C4CB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C320382B2915B523001C4CB3 /* MyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyView.xib; sourceTree = "<group>"; };
+		C320382D2915B6BB001C4CB3 /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
+		C320383029172711001C4CB3 /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
+		C32038332918B701001C4CB3 /* LastVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,9 @@
 		C320380C29156B89001C4CB3 /* Priject */ = {
 			isa = PBXGroup;
 			children = (
+				C32038322918B6DC001C4CB3 /* LastVC */,
+				C320382F291726FD001C4CB3 /* SecondVC */,
+				C320382A2915B4D1001C4CB3 /* MyView */,
 				C320380D29156B89001C4CB3 /* AppDelegate.swift */,
 				C320380F29156B89001C4CB3 /* SceneDelegate.swift */,
 				C320381129156B89001C4CB3 /* ViewController.swift */,
@@ -68,6 +79,31 @@
 				C320381629156B89001C4CB3 /* Priject.xcdatamodeld */,
 			);
 			path = Priject;
+			sourceTree = "<group>";
+		};
+		C320382A2915B4D1001C4CB3 /* MyView */ = {
+			isa = PBXGroup;
+			children = (
+				C320382B2915B523001C4CB3 /* MyView.xib */,
+				C320382D2915B6BB001C4CB3 /* MyView.swift */,
+			);
+			path = MyView;
+			sourceTree = "<group>";
+		};
+		C320382F291726FD001C4CB3 /* SecondVC */ = {
+			isa = PBXGroup;
+			children = (
+				C320383029172711001C4CB3 /* SecondVC.swift */,
+			);
+			path = SecondVC;
+			sourceTree = "<group>";
+		};
+		C32038322918B6DC001C4CB3 /* LastVC */ = {
+			isa = PBXGroup;
+			children = (
+				C32038332918B701001C4CB3 /* LastVC.swift */,
+			);
+			path = LastVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +164,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C320382C2915B523001C4CB3 /* MyView.xib in Resources */,
 				C320381D29156B8B001C4CB3 /* LaunchScreen.storyboard in Resources */,
 				C320381A29156B8B001C4CB3 /* Assets.xcassets in Resources */,
 				C320381529156B89001C4CB3 /* Main.storyboard in Resources */,
@@ -143,8 +180,11 @@
 			files = (
 				C320381229156B89001C4CB3 /* ViewController.swift in Sources */,
 				C320381829156B89001C4CB3 /* Priject.xcdatamodeld in Sources */,
+				C320382E2915B6BB001C4CB3 /* MyView.swift in Sources */,
 				C320380E29156B89001C4CB3 /* AppDelegate.swift in Sources */,
+				C320383129172711001C4CB3 /* SecondVC.swift in Sources */,
 				C320381029156B89001C4CB3 /* SceneDelegate.swift in Sources */,
+				C32038342918B701001C4CB3 /* LastVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,9 +346,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = HomeWorkApp1.Priject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -334,9 +377,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = HomeWorkApp1.Priject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
